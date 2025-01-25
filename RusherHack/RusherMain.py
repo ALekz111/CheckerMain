@@ -31,9 +31,9 @@ try:
             login_button.click()
 
             if "https://www.rusherhack.org/users/index.php" in driver.current_url:
-                print(f"[+] Аккаунт {login}:{password} годен")
+                print(f"[+] Account {login}:{password} valid")
             elif "https://www.rusherhack.org/users/login_validate.php" in driver.current_url:
-                print(f"[-] Аккаунт {login}:{password} не годен")
+                print(f"[-] Account {login}:{password} not valid")
 
             time.sleep(1)
             driver.get("https://www.rusherhack.org/users/login.php")
